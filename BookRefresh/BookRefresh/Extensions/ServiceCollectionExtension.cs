@@ -14,7 +14,7 @@ namespace BookRefresh.Extensions
         }
 
         //This extension method adds and configures the database context in the application's DI container using the connection string from the configuration file.
-        public static IServiceCollection AddAplicationDbContext(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
         {
             //This extracts the database connection string from the config file. GetConnectionString looks for a string named "DefaultConnectionContext" in the configuration file.
             var connectionString = config.GetConnectionString("DefaultConnectionContext");
